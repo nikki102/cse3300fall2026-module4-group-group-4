@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Calendar</title>
+        <script defer src="calendar_helpers.js"></script>
+        <script defer src="calendar.js"></script>   
+        <link rel="stylesheet" href="calendar.css">
+    </head>
+    <body>
+        <main class = "calendar_main">
+        <!-- a title for the current date -->
+         <header class = "month_header">
+            <h1 id="current_month"></h1>
+        <!-- buttons for next and last month-->
+         <div class = "month_buttons">
+            <button id="next_month_btn">Next Month</button>
+            <button id="prev_month_btn">Previous Month</button>
+        </div>
+        </header>
+        <!-- table grid of calendar with columns as days and weeks as rows -->
+        <section class="calendar_section">
+            <table>
+            <thead>
+                <tr>
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                </tr>
+            </thead>
+            <tbody id="calendar_body">
+                <!-- calendar clears and changes with month -->
+            </tbody>
+        </table>
+        </section>
+        <!-- adding events form for users to add events with title, description, date/time -->
+        <section class="event_form_section">
+        <form id="event_form">
+            <input type="text" id="event_name" placeholder="Event Name">
+            <input type="date" id="event_date">
+            <input type="time" id="event_time">
+            <input type="text" id="event_description" placeholder="Event Description">
+            <button type="submit">Add Event</button>
+        </form>
+        <!-- allow users to log into the website-->
+         <form id="login_form">
+            <input type="text" id="login_username" placeholder="Username">
+            <input type="password" id="login_password" placeholder="Password">
+            <button type="submit">Login</button>
+        </form>
+        <!-- allow users to log out of the website -->
+        <button id="logout_btn" style="display: none;">Logout</button>  
+        <!-- display a message if the user is not logged in -->
+        <p id="login_message">Please log in to add events.</p>
+        <!-- display a message if the user is logged in -->
+        <p id="logout_message" style="display: none;">You are logged in.</p>   
+        </section>
+    </main>
+    </body>
+</html>
+

@@ -1,0 +1,102 @@
+/* calendar styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #edf3fa;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #aebfd3;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #c9d9eb;
+}   
+
+.calendar_main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.month_header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1f4f7a;
+}
+
+.month_buttons {
+    margin-top: 10px;
+    text-align: left;
+}
+
+button {
+    background-color: #2f6690;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 12px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1f4f7a;
+}
+
+.calendar_section {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #c4d1df;
+    padding: 8px;
+}
+
+th {
+    background-color: #3d6f9b;
+    color: white;
+    text-align: center;
+}
+
+td {
+    height: 100px;
+    vertical-align: top;
+    background-color: #f9fbfd;
+}
+
+.event_form_section {
+    margin-top: 25px;
+}
+
+#event_form, #login_form {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+input {
+    padding: 8px;
+    margin: 4px;
+    border: 1px solid #7894b0;
+    border-radius: 4px;
+}
+
+#login_message, #logout_message {
+    font-weight: bold;
+    color: #1f4f7a;
+}
